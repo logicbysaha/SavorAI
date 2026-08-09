@@ -23,6 +23,7 @@ export default function ProfilePage() {
       <header className="flex justify-between items-center mb-8">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-full bg-sage/20 flex items-center justify-center overflow-hidden border-2 border-sage p-0.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="https://i.pravatar.cc/150?img=32" alt="Avatar" className="w-full h-full rounded-full object-cover" />
           </div>
           <div>
@@ -122,6 +123,7 @@ export default function ProfilePage() {
             style={{ opacity: activeTag === 'All' || activeTag === fav.category ? 1 : 0.4 }}
           >
             <div className={`aspect-[${i % 2 === 0 ? '4/5' : '1/1'}] relative w-full`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={fav.img} alt={fav.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
               <button className="absolute top-3 right-3 p-2 bg-white/20 backdrop-blur-md rounded-full text-white hover:bg-white hover:text-terracotta transition-colors">

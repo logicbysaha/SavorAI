@@ -45,7 +45,7 @@ export default function RecipesPage() {
           </div>
           <div>
             <h3 className="font-semibold text-terracotta dark:text-terracotta-light text-lg">3 items expire &lt;48h</h3>
-            <p className="text-sm text-terracotta/80 dark:text-terracotta-light/80">Let's use them up!</p>
+            <p className="text-sm text-terracotta/80 dark:text-terracotta-light/80">Let&apos;s use them up!</p>
           </div>
         </div>
         

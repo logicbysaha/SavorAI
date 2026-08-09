@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useKitchenStore } from '@/store/useKitchenStore';
+import { useKitchenStore, Item } from '@/store/useKitchenStore';
 import { Plus, Minus, Check, Clock, PackagePlus, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -28,7 +28,7 @@ export default function PantryPage() {
     }
   };
 
-  const ItemRow = ({ item, isExpiring }: { item: any, isExpiring: boolean }) => (
+  const ItemRow = ({ item, isExpiring }: { item: Item, isExpiring: boolean }) => (
     <motion.div 
       layout
       initial={{ opacity: 0, scale: 0.95 }}
